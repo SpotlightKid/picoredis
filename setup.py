@@ -48,6 +48,5 @@ setup(
     classifiers=[c for c in (c.strip() for c in classifiers.splitlines())
                  if c and not c.startswith('#')],
     py_modules=['picoredis'],
-    package_dir={'': 'picoredis'},
     zip_safe=True
 )

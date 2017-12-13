@@ -172,7 +172,7 @@ for the unix port, put it into your MICROPYPATH directory (normally
 etc.) upload it to the flash storage of your MicroPython board, for example
 using [ampy]:
 
-    $ curl -O https://raw.githubusercontent.com/SpotlightKid/picoredis/master/picoredis/picoredis.py
+    $ curl -O https://raw.githubusercontent.com/SpotlightKid/picoredis/master/picoredis.py
     $ ampy -p /dev/ttyUSB0 put picoredis.py
 
 You can also compile the `picoredis.py` module with [mpy-cross] and use the
@@ -205,7 +205,7 @@ Some inspiration and code ideas were taken from these projects:
 [micropython-redis]: https://github.com/dwighthubbard/micropython-redis
 [mit license]: http://opensource.org/licenses/MIT
 [mpy-cross]: https://github.com/micropython/micropython/tree/master/mpy-cross
-[picoredis.py]: https://raw.githubusercontent.com/SpotlightKid/picoredis/master/picoredis/picoredis.py
+[picoredis.py]: https://raw.githubusercontent.com/SpotlightKid/picoredis/master/picoredis.py
 [redis commands]: https://redis.io/commands
 [redis_protocol]: https://github.com/wayhome/redis_protocol
 [resp]: https://redis.io/topics/protocol
