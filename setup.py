@@ -43,7 +43,7 @@ setup(
     description='A very minimal Python Redis client library (not only) for MicroPython',
     long_description=read('README.rst'),
     license='MIT',
-    url='https://github.com/SpotlightKid/micropython-stm-lib',
+    url='https://github.com/SpotlightKid/picoredis',
     keywords='database,micropython,redis,network',
     classifiers=[c for c in (c.strip() for c in classifiers.splitlines())
                  if c and not c.startswith('#')],
