@@ -37,7 +37,7 @@ Topic :: System :: Networking
 
 setup(
     name='picoredis',
-    version='0.1.0',
+    version='0.1.1',
     author='Christopher Arndt',
     author_email='chris@chrisarndt.de',
     description='A very minimal Python Redis client library (not only) for MicroPython',
