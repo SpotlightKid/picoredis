@@ -167,7 +167,7 @@ On CPython and PyPy use `pip` to install as usual:
     $ pip install picoredis
 
 On MicroPython, just download the [picoredis.py] file from the repository and,
-for the unix port, put it into your MICROPYPATH directory (normally
+for the unix port, put it into your `MICROPYPATH` directory (normally
 `~/.micropython/lib`), or for base-metal ports (*esp8266*, *stm32*, *wipy*,
 etc.) upload it to the flash storage of your MicroPython board, for example
 using [ampy]:
