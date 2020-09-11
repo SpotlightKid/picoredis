@@ -38,7 +38,9 @@ def connect(configfile):
     try:
         with open(configfile) as fp:
             config = json.loads(fp.read())
-    except (IOError, OSError):
+        if not isinstance(config, dict):
+            raise ValueError
+    except (IOError, OSError, ValueError):
         config = {}
 
     sta_if = network.WLAN(network.STA_IF)
@@ -48,8 +50,7 @@ def connect(configfile):
         return False
 
     if config.get('use_default', USE_DEFAULT):
-        timeout = config.get('timeout_default_config',
-                             TIMEOUT_DEFAULT_CONFIG)
+        timeout = config.get('timeout_default_config', TIMEOUT_DEFAULT_CONFIG)
 
         while timeout != 0 and not sta_if.isconnected():
             time.sleep(1)
